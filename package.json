@@ -3,6 +3,7 @@
   "private": true,
   "description": "",
   "version": "1.0.0",
+  "packageManager": "yarn@1.22.22",
   "author": "ciiiii <allen.cccccnm@gmail.com>",
   "dependencies": {},
   "devDependencies": {
@@ -10,6 +11,10 @@
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",
     "wrangler": "^3.36.0"
+  },
+  "engines": {
+    "node": "20.x",
+    "yarn": "1.22.22"
   },
   "scripts": {
     "format": "prettier --write '**/*.{js,css,json,md}'",
