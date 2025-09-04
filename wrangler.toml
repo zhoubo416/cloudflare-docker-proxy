@@ -7,13 +7,16 @@ ip = "0.0.0.0"
 port = 8787
 local_protocol = "http"
 
-[env.vars]
-CUSTOM_DOMAIN = "libcuda.so"
+[vars]
+# Defaults for all environments to avoid ReferenceError at runtime
+CUSTOM_DOMAIN = "zhoubo416.workers.dev"
+MODE = "production"
+TARGET_UPSTREAM = ""
 
 [env.dev.vars]
 MODE = "debug"
 TARGET_UPSTREAM = "https://registry-1.docker.io"
-CUSTOM_DOMAIN = "exmaple.com"
+CUSTOM_DOMAIN = "example.com"
 
 [env.production]
 name = "cloudflare-docker-proxy"
